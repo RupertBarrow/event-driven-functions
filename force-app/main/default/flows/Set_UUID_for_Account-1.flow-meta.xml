@@ -10,7 +10,7 @@
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <stringValue>Salesforce Set UUID for Account process didn't start: No matching records found</stringValue>
+                <stringValue>Salesforce Set UUID for Account process didn&#39;t start: No matching records found</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -36,7 +36,7 @@
         <inputParameters>
             <name>emailSubject</name>
             <value>
-                <stringValue>Salesforce Set UUID for Account process didn't start: Multiple matching records found</stringValue>
+                <stringValue>Salesforce Set UUID for Account process didn&#39;t start: Multiple matching records found</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -345,17 +345,18 @@
         <object>Account</object>
     </recordUpdates>
     <startElementReference>myEventContextRecordLookup</startElementReference>
+    <status>Obsolete</status>
     <textTemplates>
         <description>text template for when multiple records are records found</description>
         <name>multipleRecordsFoundTextTemplate</name>
         <text>Hello {!OrganizationName} Admin, 
 
-The Set UUID for Account process is configured to start when a Heroku Fn Generate UUID Return platform event message occurs. A Heroku Fn Generate UUID Return message occurred, but the process didn't start because multiple records in your org match the values specified in the process's Object node.
+The Set UUID for Account process is configured to start when a Heroku Fn Generate UUID Return platform event message occurs. A Heroku Fn Generate UUID Return message occurred, but the process didn&#39;t start because multiple records in your org match the values specified in the process&#39;s Object node.
 
 Here are the values from the Heroku Fn Generate UUID Return message.
 Context Id: {!myVariable_myEvent.Context_Id__c}
 
-To fix this issue, adjust the matching filters in the process's Object node.
+To fix this issue, adjust the matching filters in the process&#39;s Object node.
 
 Thank you, 
 Salesforce Process Automation</text>
@@ -365,12 +366,12 @@ Salesforce Process Automation</text>
         <name>noRecordsFoundTextTemplate</name>
         <text>Hello {!OrganizationName} Admin, 
 
-The Set UUID for Account process is configured to start when a Heroku Fn Generate UUID Return platform event message occurs. A Heroku Fn Generate UUID Return message occurred, but the process didn't start because no records in your org match the values specified in the process's Object node.
+The Set UUID for Account process is configured to start when a Heroku Fn Generate UUID Return platform event message occurs. A Heroku Fn Generate UUID Return message occurred, but the process didn&#39;t start because no records in your org match the values specified in the process&#39;s Object node.
 
 Here are the values from the Heroku Fn Generate UUID Return message.
 Context Id: {!myVariable_myEvent.Context_Id__c}
 
-To fix this issue, adjust the matching filters in the process's Object node.
+To fix this issue, adjust the matching filters in the process&#39;s Object node.
 
 Thank you, 
 Salesforce Process Automation</text>
