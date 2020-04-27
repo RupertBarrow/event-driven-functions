@@ -7,6 +7,7 @@
     "node": "8.11.x"
   },
   "scripts": {
+    "start": "READ_MODE=changes PLUGIN_NAMES=invoke-functions OBSERVE_SALESFORCE_TOPIC_NAMES=/event/Heroku_Function_Generate_UUID_Invoke__e node lib/exec",
     "test": "`npm bin`/ava **/*-test.js",
     "test:unit": "`npm bin`/ava lib/**/*-test.js",
     "test:integration": "`npm bin`/ava --timeout=30s test/**/*-test.js"
